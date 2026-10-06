@@ -29,9 +29,9 @@ void partition(vector<int> &arr) {
       	if (i > j) break;
       	
       	// swap larger and smaller elements
-      	swap(arr[i], arr[j]);
       	x++;
       	cout << "swap " << arr[i] << " with " << arr[j] << endl;
+      	swap(arr[i], arr[j]);
       	
     }
     cout << "total swap is " << x << endl;
