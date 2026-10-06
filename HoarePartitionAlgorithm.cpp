@@ -7,6 +7,7 @@ using namespace std;
 void partition(vector<int> &arr) {
   	int n = arr.size();
   	int pivot = arr[0];
+  	int x = 0;
   	
   	int i = -1, j = n;
   	while (true) {
@@ -29,7 +30,11 @@ void partition(vector<int> &arr) {
       	
       	// swap larger and smaller elements
       	swap(arr[i], arr[j]);
+      	x++;
+      	cout << "swap " << arr[i] << " with " << arr[j] << endl;
+      	
     }
+    cout << "total swap is " << x << endl;
 }
 
 int main() {
