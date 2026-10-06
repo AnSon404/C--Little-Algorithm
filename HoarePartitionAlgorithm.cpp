@@ -39,6 +39,11 @@ void partition(vector<int> &arr) {
 
 int main() {
     vector<int> arr = {5, 3, 8, 4, 2, 7, 1, 10};
+    
+    for (int i = 0; i < arr.size(); i++) 
+      	cout << arr[i] << " "; 
+  	cout << endl;
+  	
   	partition(arr);
   	
   	for (int i = 0; i < arr.size(); i++) 
