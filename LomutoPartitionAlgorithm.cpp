@@ -26,11 +26,11 @@ void partition(vector<int> &arr) {
   	x++;
     cout << "swap at last, swap " << arr[i + 1] << " with " << arr[n - 1] << endl;
   	swap(arr[i + 1], arr[n - 1]);
-    cout << "total swap is " << x << endl;
+    cout << "Swap time(s): " << x << endl;
 }
 
 int main() {
-    vector<int> arr = {10, 80, 30, 90, 40};
+    vector<int> arr = {58, 61};
     
     for (int i = 0; i < arr.size(); i++) 
       	cout << arr[i] << " "; 
