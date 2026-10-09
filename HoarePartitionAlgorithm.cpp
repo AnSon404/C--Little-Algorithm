@@ -26,7 +26,7 @@ void partition(vector<int> &arr) {
       	
       	// if left and right crosses each other
       	// no swapping required
-      	if (i > j) break;
+      	if (i >= j) break;
       	
       	// swap larger and smaller elements
       	x++;
@@ -34,11 +34,11 @@ void partition(vector<int> &arr) {
       	swap(arr[i], arr[j]);
       	
     }
-    cout << "total swap is " << x << endl;
+    cout << "Swap time(s): " << x << endl;
 }
 
 int main() {
-    vector<int> arr = {5, 3, 8, 4, 2, 7, 1, 10};
+    vector<int> arr = {21, 19};
     
     for (int i = 0; i < arr.size(); i++) 
       	cout << arr[i] << " "; 
